@@ -21,7 +21,7 @@ accountant's tax-rule change touches. Merge conflicts, wide blast radius, untest
 **Fix:** split by *actor* — who requests the change.
 `Invoice` (business rules) / `InvoiceRepository` (persistence) / `EmailService` (notification).
 
-**Careful:** SRP is not "one method per class". Responsibility = reason to change,
+**Careful:** SRP.SRP is not "one method per class". Responsibility = reason to change,
 not amount of code.
 
 ---
@@ -109,13 +109,13 @@ goal (point at an abstraction). You can inject a concrete class and still violat
 
 | | One-line trigger | Fix |
 |---|---|---|
-| SRP | class serves two different actors | split by reason-to-change |
+| SRP.SRP | class serves two different actors | split by reason-to-change |
 | OCP | `switch` on type that keeps growing | polymorphic interface |
 | LSP | override throws / weakens contract | remodel hierarchy by capability |
 | ISP | implementor stubs unused methods | split into role interfaces |
 | DIP | `new ConcreteThing()` in high-level code | inject an interface |
 
-**Interview framing:** SRP and ISP are about *cohesion* (keep related things together,
+**Interview framing:** SRP.SRP and ISP are about *cohesion* (keep related things together,
 unrelated things apart). OCP, LSP and DIP are about *coupling* (depend on stable
 abstractions so change doesn't propagate).
 
