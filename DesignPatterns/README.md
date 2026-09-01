@@ -1,7 +1,5 @@
 # Design Patterns — Notes & Practice
 
-Following [prateek/design-patterns-java](https://github.com/prateek27/design-patterns-java) curriculum.
-
 **Run any example:** `java -ea <File>.java` (Java 11+ single-file launcher, no build tool; `-ea` turns on the assertions used as self-checks).
 Every file has a `main` that runs the bad version, then the good version.
 
