@@ -36,8 +36,8 @@ business adds an option. `if (method.equals("CreditCard")) ... else if ("Paypal"
 **Why it hurts:** adding UPI means editing, recompiling and re-testing a class that
 already worked. Every edit risks breaking the existing branches.
 
-**Fix:** make the varying part a polymorphic interface. `PaymentProcessor` depends on
-`PaymentMethod`; adding UPI = adding a new file, zero edits to tested code.
+**Fix:** make the varying part a polymorphic interface. `PaymentMethod` depends on
+`PaymentProcessor`; adding UPI = adding a new file, zero edits to tested code.
 
 **This is literally the Strategy pattern.** Also Factory, State, Visitor.
 
