@@ -13,15 +13,15 @@ public class PaymentProcessor {
         }
     }
 
-    void payUsingCreditCard(double amount){
+    private void payUsingCreditCard(double amount){
         System.out.println("amount " + amount + " paid using credit card" );
     }
 
-    void payUsingDebitCard(double amount){
+    private void payUsingDebitCard(double amount){
         System.out.println("amount " + amount + " paid using debit card" );
     }
 
-    void payUsingUPI(double amount){
+    private void payUsingUPI(double amount){
         System.out.println("amount " + amount + " paid using UPI" );
     }
 }

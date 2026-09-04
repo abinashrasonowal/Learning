@@ -17,8 +17,14 @@ One folder per principle, violation and fix in sibling packages:
   srp/solution/DatabaseRepository.java
   srp/solution/EmailService.java
   srp/solution/SRPSolutionMain.java
-  OCP/problem/...  OCP/solution/...
-  ...
+  ocp/problem/PaymentProcessor.java     if/else chain on a PaymentMethod enum
+  ocp/problem/PaymentMethod.java
+  ocp/problem/OCPProblemMain.java
+  ocp/solution/PaymentMethod.java       the interface — the varying part
+  ocp/solution/PaymentProcessor.java    the context — closed for modification
+  ocp/solution/CreditCard.java  DebitCard.java  UPI.java
+  ocp/solution/OCPSolutionMain.java
+  lsp/...  isp/...  dip/...
 ```
 
 Package name must match the folder path. Two ways to run:
@@ -59,16 +65,13 @@ Add `out/` to `.gitignore` if it isn't already.
 | Principle | problem/ to build | `solution/` must prove |
 |---|---|---|
 | **srp** ✅ | `Invoice` that prices, saves to DB *and* emails | three actors → three classes; pricing **stays** in Invoice |
-| **OCP** | `PaymentProcessor.process(String method, double amt)` with an if/else chain | adding a 4th payment method is a **new file only** — prove it by adding one |
+| **OCP** ✅ | `PaymentProcessor.process(String method, double amt)` with an if/else chain | adding a 4th payment method is a **new file only** — prove it by adding one |
 | **LSP** | `ReadOnlyFile extends File`, `write()` throws | `readOnly.write()` fails to **compile**, not at runtime |
 | **ISP** | `SimplePrinter implements Machine{print,scan,copy}`, two throw | role interfaces; zero stub throws |
 | **DIP** | `NotificationService` doing `new EmailService()` in its constructor | inject an interface, then write a recording test double and `assert` on it |
 
 **After each one, break it on purpose** — that's where the lesson lands:
 
-- **srp** — add `printToPdf()`. Which class? Where it *doesn't* go is the point.
-- **OCP** — add a `Crypto` method to both packages. Count edits: problem = edit a
-  working class, solution = add one file, touch nothing.
 - **LSP** — call `write()` on the read-only type in `solution/`. Compiler stops you.
 - **ISP** — add `fax()` to the fat interface; every implementor breaks. Now add it to
   the role interfaces instead — only the machines that fax change.
@@ -101,11 +104,11 @@ One commit per principle beats one big one — the diff is your revision materia
 ## Done when
 
 - [x] Read `NOTES.md`
-- [ ] srp — `problem/` done ✅, `solution/` filled in, driver runs, broken once
-- [ ] OCP — written, runs, broken once
-- [ ] LSP — written, runs, broken once
-- [ ] ISP — written, runs, broken once
-- [ ] DIP — written, runs, broken once
+- [x] srp — `problem/` ✅, `solution/` ✅, driver runs ✅
+- [x] ocp — written ✅, runs ✅, encapsulated ✅
+- [ ] lsp — written, runs, broken once
+- [ ] isp — written, runs, broken once
+- [ ] dip — written, runs, broken once
 - [ ] All 6 self-check questions answered without looking
 - [ ] Committed
 
