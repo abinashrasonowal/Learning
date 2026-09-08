@@ -53,12 +53,14 @@ varies in your domain. Guessing wrong = speculative abstraction (worse than the 
 **Smell:** an override that `throw new UnsupportedOperationException(...)`, or that
 tightens what the caller is allowed to pass, or silently does nothing.
 
-**Why it hurts:** `ReadOnlyFile extends File` compiles fine, then blows up at runtime
-the moment someone calls `write()` through a `File` reference. The type system lied.
+**Why it hurts:** `Square extends Rectangle` compiles fine, then quietly returns the
+wrong area the moment a caller sets width and height through a `Rectangle` reference.
+The type system lied — and here it doesn't even throw, it just answers 16 instead of 20.
 
-**Fix:** the hierarchy was wrong, not the subclass. Don't model "read-only file" as a
-crippled file — model the *capabilities*: `CanRead` and `CanWrite` interfaces, and let
-each class implement only what it truly supports. The compiler now stops the mistake.
+**Fix:** the hierarchy was wrong, not the subclass. Don't model a square as a rectangle
+with a constraint bolted on — model the shared *capability*: a `Shape` interface with
+`area()`, `Rectangle` and `Square` as siblings implementing it, and drop the setters that
+made the false promise. The compiler now stops the mistake.
 
 **Rule of thumb:** inheritance is for "is-substitutable-for", not "is-kind-of".
 A `Square` is a kind of `Rectangle` in geometry, but not substitutable for one in code

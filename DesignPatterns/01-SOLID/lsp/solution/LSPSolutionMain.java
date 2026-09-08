@@ -1,19 +1,32 @@
 package lsp.solution;
 
-
 public class LSPSolutionMain {
-    static void backup(ReadWriteFile file) {
-        file.write(file.read() + " [backup]");
-        System.out.println("backed up " + file.getName() + ": " + file.read());
+
+    static void stretch(Rectangle rectangle) {
+        Rectangle stretched = rectangle.resized(5, 4);
+        System.out.println(stretched + " area " + stretched.area());
+        assert stretched.area() == 20 : "Rectangle broke its own contract";
+    }
+
+    // both types ARE substitutable here — area() is a promise each one can keep
+    static double totalArea(Shape... shapes) {
+        double total = 0;
+        for (Shape shape : shapes) {
+            total += shape.area();
+        }
+        return total;
     }
 
     public static void main(String[] args) {
-        backup(new ReadWriteFile("a.txt", "hello"));
-        ReadOnlyFile readOnlyFile = new ReadOnlyFile("b.txt","read only ");
-        System.out.println(readOnlyFile.read());
-        // backup(readOnlyFile);    // Required type:
-                                    // ReadWriteFile
+        stretch(new Rectangle(1, 1));
+
+        Square square = new Square(3);
+        System.out.println(square + " area " + square.area());
+        // stretch(square);         // Required type:
+                                    // Rectangle
                                     // Provided:
-                                    // ReadOnlyFile
+                                    // Square
+
+        System.out.println("total " + totalArea(new Rectangle(2, 3), square));
     }
 }
