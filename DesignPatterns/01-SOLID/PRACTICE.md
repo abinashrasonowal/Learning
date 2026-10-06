@@ -113,8 +113,8 @@ One commit per principle beats one big one — the diff is your revision materia
 - [x] srp — `problem/` ✅, `solution/` ✅, driver runs ✅
 - [x] ocp — written ✅, runs ✅, encapsulated ✅
 - [x] lsp — written ✅, runs ✅, `stretch(square)` rejected by javac ✅
-- [ ] isp — written, runs, broken once
-- [ ] dip — written, runs, broken once
+- [x] isp — written, runs, broken once
+- [x] dip — written, runs, broken once
 - [ ] All 6 self-check questions answered without looking
 - [ ] Committed
 

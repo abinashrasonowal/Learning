@@ -30,7 +30,7 @@ java -ea -cp out srp.solution.SRPSolutionMain
 ## Progress
 
 ### Foundations
-- [ ] 01 — SOLID Principles — SRP done, OCP/LSP/ISP/DIP to go
+- [x] 01 — SOLID Principles
 
 ### Creational
 - [ ] 02 — Singleton
