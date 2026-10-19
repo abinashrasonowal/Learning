@@ -40,6 +40,6 @@ java -ea -cp out srp.solution.SRPSolutionMain
 
 ## Progress
 
-- **Design Patterns** — 1 of 24 topics ([progress](DesignPatterns/README.md#progress))
+- **Design Patterns** — 8 of 24 topics ([progress](DesignPatterns/README.md#progress))
 - **Clean Code** — reading
 - **The Pragmatic Programmer** — reading

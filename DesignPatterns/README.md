@@ -50,14 +50,14 @@ java -ea -cp out srp.solution.SRPSolutionMain
 
 ### Behavioural
 - [ ] 14 — Chain of Responsibility
-- [ ] 15 — Command
-- [ ] 16 — Iterator
-- [ ] 17 — Mediator
+- [x] 15 — Command
+- [x] 16 — Iterator
+- [x] 17 — Mediator
 - [ ] 18 — Memento
-- [ ] 19 — Observer
-- [ ] 20 — State
-- [ ] 21 — Strategy
-- [ ] 22 — Template Method
+- [x] 19 — Observer
+- [x] 20 — State
+- [x] 21 — Strategy
+- [x] 22 — Template Method
 - [ ] 23 — Visitor
 
 ### Apply
