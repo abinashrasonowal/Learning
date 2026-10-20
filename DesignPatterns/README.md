@@ -33,11 +33,11 @@ java -ea -cp out srp.solution.SRPSolutionMain
 - [x] 01 — SOLID Principles
 
 ### Creational
-- [ ] 02 — Singleton
-- [ ] 03 — Factory
-- [ ] 04 — Abstract Factory
-- [ ] 05 — Builder
-- [ ] 06 — Prototype
+- [x] 02 — Singleton
+- [x] 03 — Factory
+- [x] 04 — Abstract Factory
+- [x] 05 — Builder
+- [x] 06 — Prototype
 
 ### Structural
 - [ ] 07 — Adapter
