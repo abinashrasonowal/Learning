@@ -8,6 +8,7 @@ the source material, my notes, and — where the subject has code — runnable e
 | Folder | Subject | Notes | Practice |
 |---|---|---|---|
 | [DesignPatterns](DesignPatterns/) | SOLID principles, GoF patterns, LLD | per-topic `NOTES.md` | Java, `problem/` + `solution/` per topic |
+| [DSA](DSA/) | Data structures & algorithms | per-topic `NOTES.md` | Java, one folder per topic + [curated sheet](DSA/SHEET.md) + [problem log](DSA/PROBLEMS.md) |
 | [CleanCode](CleanCode/) | Clean Code — Robert C. Martin | `CleanCode.md` | — |
 | [ThePragmaticProgrammer](ThePragmaticProgrammer/) | The Pragmatic Programmer, 20th Anniv. Ed. | — | — |
 
@@ -41,5 +42,6 @@ java -ea -cp out srp.solution.SRPSolutionMain
 ## Progress
 
 - **Design Patterns** — 19 of 24 topics ([progress](DesignPatterns/README.md#progress))
+- **DSA** — 1 of 12 topics have notes, 0 problems logged ([progress](DSA/README.md#progress))
 - **Clean Code** — reading
 - **The Pragmatic Programmer** — reading
