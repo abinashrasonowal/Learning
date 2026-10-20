@@ -3,7 +3,7 @@
 > Define a family of algorithms, put each one behind a common interface, and let the
 > caller pick one at runtime.
 
-You already wrote this — `01-SOLID/ocp/solution` *is* Strategy. OCP is the principle,
+You already wrote this — `../../01-SOLID/ocp/solution` *is* Strategy. OCP is the principle,
 Strategy is the shape it most often takes.
 
 ---

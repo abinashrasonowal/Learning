@@ -134,7 +134,7 @@ gets ~25 distinct instances out of 32 threads. Two smaller things to notice:
 
 **The reframe:** you usually want *one instance*, not *a class that enforces one
 instance*. Construct it once in `main` (or let Spring's default singleton scope do it)
-and inject it. Same instance count, no global, testable — see `01-SOLID/dip/solution`,
+and inject it. Same instance count, no global, testable — see `../../01-SOLID/dip/solution`,
 which is exactly this move.
 
 ---

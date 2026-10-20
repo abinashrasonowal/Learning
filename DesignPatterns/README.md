@@ -5,11 +5,17 @@ curriculum. Java 17, no build tool.
 
 ## Layout
 
-One folder per topic. Inside it, `NOTES.md` for revision plus a `problem/` and a
-`solution/` package — the violation and the fix side by side, each with its own
-driver class.
+Topics are grouped by GoF category — `Creational/`, `Structural/`, `Behavioral/` —
+with `01-SOLID/` kept at the top as the foundation. One folder per topic. Inside it,
+`NOTES.md` for revision plus a `problem/` and a `solution/` package — the violation
+and the fix side by side, each with its own driver class.
 
 ```
+01-SOLID/
+Creational/   02-Singleton … 06-Prototype
+Structural/   07-Adapter … 13-Proxy
+Behavioral/   15-Command … 22-TemplateMethod
+
 01-SOLID/
   NOTES.md
   PRACTICE.md
@@ -48,7 +54,7 @@ java -ea -cp out srp.solution.SRPSolutionMain
 - [x] 12 — Flyweight
 - [x] 13 — Proxy
 
-### Behavioural
+### Behavioral
 - [ ] 14 — Chain of Responsibility
 - [x] 15 — Command
 - [x] 16 — Iterator
