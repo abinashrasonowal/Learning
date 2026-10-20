@@ -40,13 +40,13 @@ java -ea -cp out srp.solution.SRPSolutionMain
 - [x] 06 — Prototype
 
 ### Structural
-- [ ] 07 — Adapter
+- [x] 07 — Adapter
 - [ ] 08 — Bridge
-- [ ] 09 — Composite
-- [ ] 10 — Decorator
-- [ ] 11 — Facade
-- [ ] 12 — Flyweight
-- [ ] 13 — Proxy
+- [x] 09 — Composite
+- [x] 10 — Decorator
+- [x] 11 — Facade
+- [x] 12 — Flyweight
+- [x] 13 — Proxy
 
 ### Behavioural
 - [ ] 14 — Chain of Responsibility
