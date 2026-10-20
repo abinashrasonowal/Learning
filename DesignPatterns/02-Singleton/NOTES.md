@@ -93,6 +93,19 @@ arguments.
 
 ---
 
+## The reference example: `AppSettings`
+
+The course's solution is rung **2 — naive lazy**: `if (instance == null) instance = new
+AppSettings();` with no lock. Single-threaded it looks right; `naive/RaceMain` here
+gets ~25 distinct instances out of 32 threads. Two smaller things to notice:
+
+- `apiKey = "12345-ABCDE"` hard-coded in the constructor — a singleton makes secrets
+  and config look like constants. Load them from outside and inject.
+- the problem's argument is "two instances waste memory". That's the *wasteful* case
+  from the litmus test below — it calls for a shared instance, not a Singleton.
+
+---
+
 ## How singletons get broken
 
 | Attack | What happens | Defence |

@@ -19,14 +19,18 @@ implementations, each fixing the one below:
   holder/Counter.java             static nested holder — the default
   enumsingleton/Counter.java      enum INSTANCE
   attack/ReflectionAttack.java    breaks naive/synced/dcl/holder, fails on enum
-  attack/SerializationAttack.java same, then fixed with readResolve
-  SingletonMain.java              (package-less driver is fine here, or pick a package)
+  attack/SerializationAttack.java breaks dcl (no readResolve), holder survives (readResolve), enum free
+  ladder/Race.java                latch-started threads, counts distinct instances by identity
+  ladder/SingletonMain.java       runs the race against every rung above naive
 ```
 
 Package name must match the folder path.
 
 ```bash
 javac -Xlint:all -d out $(find . -name '*.java') && java -ea -cp out naive.RaceMain
+java -ea -cp out ladder.SingletonMain
+java -ea -cp out attack.ReflectionAttack
+java -ea -cp out attack.SerializationAttack
 ```
 
 ## Rules
@@ -92,14 +96,15 @@ git add DesignPatterns/02-Singleton && git commit -m "singleton: <step>"
 
 ## Done when
 
+- [x] Watched the course video, did the course exercise
 - [ ] Read `NOTES.md`
-- [ ] naive — race fires, more than one instance, asserted
-- [ ] synced — same race yields 1
+- [x] naive — race fires, more than one instance, asserted
+- [x] synced — same race yields 1
 - [ ] dcl — written with `volatile`, cost of removing it understood
-- [ ] holder — laziness proven by init order
-- [ ] enum — survives both attacks
-- [ ] reflection attack written, breaks holder, refused by enum
-- [ ] serialization attack written, fixed with `readResolve`
+- [x] holder — laziness proven by init order
+- [x] enum — survives both attacks
+- [x] reflection attack written, breaks holder, refused by enum
+- [x] serialization attack written, fixed with `readResolve`
 - [ ] All 6 self-check questions answered without looking
 - [ ] Committed
 
