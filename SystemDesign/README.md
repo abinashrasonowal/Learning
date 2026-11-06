@@ -22,7 +22,7 @@ Two halves:
 | 01 | [fundamentals](01-fundamentals/) | estimate first: QPS, storage, bandwidth | ✅ |
 | 02 | [networking-apis](02-networking-apis/) | DNS, HTTP, REST vs gRPC, WebSockets | ✅ |
 | 03 | [load-balancing](03-load-balancing/) | L4 vs L7, algorithms, health checks | ✅ |
-| 04 | caching | cache-aside vs write-through, eviction, CDN | ⬜ |
+| 04 | [caching](04-caching/) | cache-aside vs write-through, eviction, CDN | ✅ |
 | 05 | databases | SQL vs NoSQL, indexes, normalisation | ⬜ |
 | 06 | replication-sharding | leader/follower, partition keys, consistent hashing | ⬜ |
 | 07 | consistency | CAP / PACELC, quorums, eventual consistency | ⬜ |
@@ -56,5 +56,5 @@ Order matters: 06 assumes 05, 07 assumes 06, 09 assumes 08.
 
 ## Progress
 
-- Topics: 3 of 11 have notes
+- Topics: 4 of 11 have notes
 - Case studies: 0 of 6
