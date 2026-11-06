@@ -67,4 +67,4 @@ java -ea -cp out srp.solution.SRPSolutionMain
 - [ ] 23 — Visitor
 
 ### Apply
-- [ ] 24 — LLD Project: Ride Sharing App
+- [ ] 24 — LLD Project: Ride Sharing App (HLD pair: [SystemDesign case studies](../SystemDesign/README.md#case-studies))
