@@ -23,9 +23,9 @@ Two halves:
 | 02 | [networking-apis](02-networking-apis/) | DNS, HTTP, REST vs gRPC, WebSockets | ✅ |
 | 03 | [load-balancing](03-load-balancing/) | L4 vs L7, algorithms, health checks | ✅ |
 | 04 | [caching](04-caching/) | cache-aside vs write-through, eviction, CDN | ✅ |
-| 05 | databases | SQL vs NoSQL, indexes, normalisation | ⬜ |
-| 06 | replication-sharding | leader/follower, partition keys, consistent hashing | ⬜ |
-| 07 | consistency | CAP / PACELC, quorums, eventual consistency | ⬜ |
+| 05 | [databases](05-databases/) | SQL vs NoSQL, indexes, normalisation | ✅ |
+| 06 | [replication-sharding](06-replication-sharding/) | leader/follower, partition keys, consistent hashing | ✅ |
+| 07 | [consistency](07-consistency/) | CAP / PACELC, quorums, eventual consistency | ✅ |
 | 08 | messaging | queues vs pub/sub, Kafka, delivery guarantees | ⬜ |
 | 09 | reliability | rate limiting, retries, idempotency, circuit breakers | ⬜ |
 | 10 | storage-search | blob storage, inverted indexes, search engines | ⬜ |
@@ -56,5 +56,5 @@ Order matters: 06 assumes 05, 07 assumes 06, 09 assumes 08.
 
 ## Progress
 
-- Topics: 4 of 11 have notes
+- Topics: 7 of 11 have notes
 - Case studies: 0 of 6

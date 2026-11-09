@@ -43,7 +43,7 @@ java -ea -cp out srp.solution.SRPSolutionMain
 ## Progress
 
 - **Design Patterns** — 19 of 24 topics ([progress](DesignPatterns/README.md#progress))
-- **System Design** — 4 of 11 topics, 0 of 6 case studies ([progress](SystemDesign/README.md#progress))
+- **System Design** — 7 of 11 topics, 0 of 6 case studies ([progress](SystemDesign/README.md#progress))
 - **DSA** — 1 of 12 topics have notes, 0 problems logged ([progress](DSA/README.md#progress))
 - **Clean Code** — reading
 - **The Pragmatic Programmer** — reading
