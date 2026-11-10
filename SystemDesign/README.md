@@ -26,10 +26,10 @@ Two halves:
 | 05 | [databases](05-databases/) | SQL vs NoSQL, indexes, normalisation | ✅ |
 | 06 | [replication-sharding](06-replication-sharding/) | leader/follower, partition keys, consistent hashing | ✅ |
 | 07 | [consistency](07-consistency/) | CAP / PACELC, quorums, eventual consistency | ✅ |
-| 08 | messaging | queues vs pub/sub, Kafka, delivery guarantees | ⬜ |
-| 09 | reliability | rate limiting, retries, idempotency, circuit breakers | ⬜ |
-| 10 | storage-search | blob storage, inverted indexes, search engines | ⬜ |
-| 11 | observability | metrics, logs, traces, SLOs | ⬜ |
+| 08 | [messaging](08-messaging/) | queues vs pub/sub, Kafka, delivery guarantees | ✅ |
+| 09 | [reliability](09-reliability/) | rate limiting, retries, idempotency, circuit breakers | ✅ |
+| 10 | [storage-search](10-storage-search/) | blob storage, inverted indexes, search engines | ✅ |
+| 11 | [observability](11-observability/) | metrics, logs, traces, SLOs | ✅ |
 
 Order matters: 06 assumes 05, 07 assumes 06, 09 assumes 08.
 
@@ -56,5 +56,5 @@ Order matters: 06 assumes 05, 07 assumes 06, 09 assumes 08.
 
 ## Progress
 
-- Topics: 7 of 11 have notes
+- Topics: 11 of 11 have notes
 - Case studies: 0 of 6
