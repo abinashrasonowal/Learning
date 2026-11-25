@@ -37,7 +37,7 @@ Order matters: 06 assumes 05, 07 assumes 06, 09 assumes 08.
 
 | Design | Stresses | Status | LLD pair |
 |---|---|---|---|
-| URL shortener | ID generation, read-heavy caching | ⬜ | — |
+| [URL shortener](case-studies/url-shortener.md) | ID generation, read-heavy caching | ✅ | — |
 | Rate limiter | distributed counters, algorithms | ⬜ | — |
 | Chat / messaging | WebSockets, fan-out, ordering | ⬜ | — |
 | News feed | fan-out on write vs read | ⬜ | — |
@@ -57,4 +57,4 @@ Order matters: 06 assumes 05, 07 assumes 06, 09 assumes 08.
 ## Progress
 
 - Topics: 11 of 11 have notes
-- Case studies: 0 of 6
+- Case studies: 1 of 6

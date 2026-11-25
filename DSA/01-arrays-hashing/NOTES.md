@@ -6,6 +6,13 @@
 The whole topic is one question — **what do I need to remember, and keyed by what?**
 Get the key right and the problem collapses.
 
+Deep dive on what makes a key work — `==` vs `equals`, the `hashCode` contract, and
+`HashMap` internals: **[EQUALITY-AND-HASHING.md](EQUALITY-AND-HASHING.md)**.
+How the dynamic array underneath most solutions grows and shifts:
+**[ARRAYLIST-INTERNALS.md](ARRAYLIST-INTERNALS.md)**.
+When you need keys in order (`floor`, `ceiling`, ranges), the red-black tree behind
+`TreeMap` / `TreeSet`: **[TREEMAP-INTERNALS.md](TREEMAP-INTERNALS.md)**.
+
 ---
 
 ## The four techniques

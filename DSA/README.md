@@ -41,7 +41,7 @@ java -ea -cp ../out TwoSum
 | 04 | stack-queue | remember what's still unresolved | ⬜ | ⬜ |
 | 05 | binary-search | halve a *monotonic* search space | ⬜ | ⬜ |
 | 06 | linked-list | pointer surgery, fast/slow | ⬜ | ⬜ |
-| 07 | trees-bst | recursion is the traversal | ⬜ | ⬜ |
+| 07 | [trees-bst](07-trees-bst/) | recursion is the traversal | ⬜ | ⬜ |
 | 08 | heaps-intervals | k-th anything, sort-by-start | ⬜ | ⬜ |
 | 09 | graphs | BFS = shortest hops, DFS = reachability | ⬜ | ⬜ |
 | 10 | dp | define the state, then the transition | ⬜ | ⬜ |
